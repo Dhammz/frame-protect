@@ -19,7 +19,7 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://NAMA-PROJECT-KAMU.vercel.app",
+        "https://frame-protect-murex.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
@@ -51,7 +51,7 @@ app.include_router(
 
 
 # =========================
-# ROOT / HEALTH CHECK
+# HEALTH CHECK
 # =========================
 
 @app.get("/")
